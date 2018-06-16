@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -12,7 +14,7 @@
     <h1 class="header__logo"><a class="header__logo-link" href="#">device</a></h1>
     <nav class="header__nav">
       <div class="header__user-row">
-        <form class="header__form form" action="get" action="https://echo.htmlacademy.ru">
+        <form class="header__form form" action="https://echo.htmlacademy.ru">
           <input class="form__search" type="search" name="search" placeholder="Поиск по сайту">
         </form>
         <ul class="user-nav">
@@ -24,7 +26,7 @@
       </div>
       <div class="header__main-row">
         <ul class="main-menu main-menu--left">
-          <li class="main-menu__item"><a href="#">Каталог товаров</a>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Каталог товаров</a>
             <div class="catalog-list__wrapper">
               <ul class="catalog-list">
                 <li class="catalog-list__item"><a class="catalog-list__link" href="#">Виртуальная реальность</a></li>
@@ -42,16 +44,16 @@
           </li>
         </ul>
         <ul class="main-menu main-menu--right">
-          <li class="main-menu__item"><a href="main-menu__link">Доставка</a></li>
-          <li class="main-menu__item"><a href="main-menu__link">Гарантия</a></li>
-          <li class="main-menu__item"><a href="main-menu__link">Контакты</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Доставка</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Гарантия</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-page container">
     <section class="breadcrumbs">
-      <h1 class="breadcrumbs__title">Моноподы для селфи</h1>
+      <h1 class="breadcrumbs__title title">Моноподы для селфи</h1>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-list__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
         <li class="breadcrumbs-list__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
@@ -59,10 +61,10 @@
       </ul>
     </section>
     <aside class="container-filter">
-      <h3 class="container-filter__title">Фильтр:</h3>
+      <h3 class="container-filter__title filter__title">Фильтр:</h3>
       <form class="container-filter__form filter-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость</legend>
+        <fieldset class="fieldset-frame">
+          <legend class="legend-title">Стоимость</legend>
           <div class="filter-form__range">
             <div class="range-scale">
               <span class="range-scale__left"></span>
@@ -77,34 +79,34 @@
             </div>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul class="filter-form__checkbox checkbox-list">
-            <li class="checkbox-list__item">
+        <fieldset class="fieldset-frame">
+          <legend class="legend-title">Цвет</legend>
+          <ul class="filter-form__checkbox checkbox-list filter-form__list">
+            <li class="checkbox-list__item filter-form__item">
               <label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked />
                 <span class="checkbox-list__indicator"></span> Черный
               </label>
             </li>
-            <li class="checkbox-list__item">
+            <li class="checkbox-list__item filter-form__item">
               <label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" />
                 <span class="checkbox-list__indicator"></span> Белый
               </label>
             </li>
-            <li class="checkbox-list__item">
+            <li class="checkbox-list__item filter-form__item">
               <label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked />
                 <span class="checkbox-list__indicator"></span> Синий
               </label>
             </li>
-            <li class="checkbox-list__item">
+            <li class="checkbox-list__item filter-form__item">
               <label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" />
                 <span class="checkbox-list__indicator"></span> Красный
               </label>
             </li>
-            <li class="checkbox-list__item">
+            <li class="checkbox-list__item filter-form__item">
               <label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" />
                 <span class="checkbox-list__indicator"></span> Розовый
@@ -112,16 +114,16 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul class="filter-form__radio radio-list">
-            <li class="radio-list__item">
+        <fieldset class="fieldset-frame">
+          <legend class="legend-title">Bluetooth</legend>
+          <ul class="filter-form__radio radio-list filter-form__list">
+            <li class="radio-list__item filter-form__item">
               <label tabindex="0">
                 <input type="radio" class="visually-hidden filter-input filter-input-radio" name="bluetooth" value="yes" checked />
                 <span class="radio-list__indicator"></span> Есть
               </label>
             </li>
-            <li class="radio-list__item">
+            <li class="radio-list__item filter-form__item">
               <label tabindex="0">
                 <input type="radio" class="visually-hidden filter-input filter-input-radio" name="bluetooth" value="no" />
                 <span class="radio-list__indicator"></span> Нет
@@ -136,9 +138,9 @@
       <div class="goods__filter-wrapper filter">
         <h3 class="filter__title">Сортировка:</h3>
         <ul class="filter__list">
-          <li class="filter__item filter__item--press"><a>По цене</a></li>
-          <li class="filter__item"><a href="#">По типу</a></li>
-          <li class="filter__item"><a href="#">По функционалу</a></li>
+          <li class="filter__item filter__item--press"><a class="filter__link" href="#">По цене</a></li>
+          <li class="filter__item"><a class="filter__link" href="#">По типу</a></li>
+          <li class="filter__item"><a class="filter__link" href="#">По популярности</a></li>
         </ul>
         <ul class="arrow__list">
           <li class="arrow__item arrow__item--up"><a class="arrow__link" href="#"><span class="visually-hidden">up</span></a></li>
@@ -184,7 +186,7 @@
       <div class="footer__user-row">
         <ul class="user-nav">
           <li class="user-nav__item">Валентин Петухов</li>
-          <li class="user-nav__item"><<a class="user-nav__link" href="#">Выйти</a></li>
+          <li class="user-nav__item"><a class="user-nav__link" href="#">Выйти</a></li>
         </ul>
         <div class="footer__compare compare"><a class="compare__link" href="#">Сравнить</a></div>
         <div class="footer__basked basked"><a class="basked__link" href="#">Корзина</a></div>

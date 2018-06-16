@@ -1,0 +1,384 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "gilroylight", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  min-width: 1200px;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-page {
+	background-color: #f7e296;
+}
+
+.header__logo {
+	margin: 0;
+	padding: 0;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.header__logo-link {
+	color: #000000;
+}
+
+.user-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.user-nav__link {
+	color: #000000;
+}
+
+.compare__link,
+.basked__link {
+	color: #000000;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu__item {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: extrabold;
+}
+
+.main-menu__link {
+	color: #000000;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-list__item {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	text-transform: none;
+}
+
+.catalog-list__link {
+	color: #000000;
+}
+
+.slider-list__number {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 179.2px;
+	line-height: 179.2px;
+}
+
+.slider-list__title {
+	margin: 0;
+	padding: 0;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+}
+
+.slider-list__description {
+	margin: 0;
+	padding: 0;
+	color: #464646;
+}
+
+.button {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	background-color: #f0c52e;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.options__attribute {
+	font-family: "gilroylight", "Arial", sans-serif;
+	font-size: 36px;
+	font-size: 48px;
+}
+
+.options__property {
+	font-size: 13px;
+	line-height: 20px;
+	color: #464646;
+}
+
+.category__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.category__title {
+	margin: 0;
+	padding: 0;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px; 
+}
+
+.offers__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.offers__item {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.offers__link {
+	color: #000000;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.description {
+	margin: 0;
+	padding: 0;
+	color: #464646;
+}
+
+.logotype__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs-list__item {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.breadcrumbs__link {
+	color: #000000;
+}
+
+.filter__title {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.legend-title {
+	margin: 0;
+	padding: 0;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	border: none;
+}
+
+.fieldset-frame {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.range-amount__text {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-form__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter-form__item {
+	font-family: "open_sanslight", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.filter__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter__item {
+	font-family: "open_sanslight", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.filter__link {
+	color: #000000;
+}
+
+.arrow__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.arrow__item {
+	width: 10px;
+	height: 10px;
+	background-color: red;
+}
+
+.goods__list {
+	margin: 0;
+	padding: 0;
+}
+
+.goods__title {
+	margin: 0;
+	padding: 0;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.goods__price {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.pagination__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination__item {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.pagination__link {
+	color: #000000;
+}
+
+.pagination__button {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer-page {
+	background-color: #464646;
+}
+
+.footer__logo {
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.footer__logo-link {
+	color: #ffc600;
+}
+
+.user-nav__link--footer,
+.compare__link--footer,
+.basked__link--footer {
+	color: #ffffff;
+}
+
+.footer__address,
+.footer__phone {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+
+.footer__nav,
+.footer__social {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+} 
+
+.footer-menu__item {
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.footer-menu__link {
+	color: #ffffff;
+}
+
+compare__link--footer
+basked__link--footer
