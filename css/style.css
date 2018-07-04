@@ -432,6 +432,11 @@ a {
 	display: flex;
 }
 
+.slider-2,
+.slider-3 {
+	display: none;
+}
+
 .slider-list__image {
 	margin: 9px 125px 0 90px;
 }
