@@ -102,27 +102,3 @@ continueShopping.addEventListener("click", function (evt) {
 });
 }
 
-// var leftNav = document.querySelector(".left-nav");
-// var rightNav = document.querySelector(".right-nav");
-
-// var check=document.querySelector(".services-item-slide input[checked]");
-// if (check!=null)
-// {
-// leftNav.addEventListener("click", function(){
-//   check.style.border="1px solid red";
-//   if (check.previousSibling.previousSibling.type=="radio")
-//   {
-//     check.checked=false;
-//     check.previousSibling.previousSibling.click();
-//     check=check.previousSibling.previousSibling;
-//   }
-// });
-// rightNav.addEventListener("click", function(){
-// if (check.nextSibling.nextSibling.type=="radio")
-// {
-//   check.checked=false;
-//   check.nextSibling.nextSibling.click();
-//   check=check.nextSibling.nextSibling;
-// }
-// });
-// }
