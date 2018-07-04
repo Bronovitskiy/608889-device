@@ -143,9 +143,9 @@ a {
   width: 100%;
 }
 
-.form:focus > .form__search {
-border-bottom: 2px solid black;
-	transition: all ease 1s;
+.form:focus > .form__search,
+.form__search:focus {
+	border-bottom: 2px solid black;
 	width: 81%;
 }
 
@@ -689,8 +689,8 @@ border-bottom: 2px solid black;
 }
 
 .offers {
-    background-image: -webkit-linear-gradient(#fff, #fff 100px, #e5e5e5 100px);
-    background-image: -o-linear-gradient(#fff, #fff 100px, #e5e5e5 100px);
+    background-image: -webkit-linear-gradient(#fff, #fff 40px, #e5e5e5 40px);
+    background-image: -o-linear-gradient(#fff, #fff 40px, #e5e5e5 40px);
     background-image: linear-gradient(#fff, #fff 40px, #e5e5e5 40px);
 }
 
@@ -1864,6 +1864,7 @@ border-bottom: 2px solid black;
 .write-us-form__button {
 	border: none;
 	padding: 9px -21px;
+	background-color:  white;
 }
 
 .write-us-form__close {
