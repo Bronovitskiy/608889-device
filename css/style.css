@@ -149,7 +149,7 @@ a {
 	width: 81%;
 }
 
-.form:focus  .form__button {
+.form:focus > .form__button {
 	visibility: visible;
 	cursor: pointer;
 	display: block;
