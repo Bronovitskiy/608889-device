@@ -7,8 +7,6 @@ var yourName = modalWriteUs.querySelector(".your-name");
 var yourEmail = modalWriteUs.querySelector(".email");
 var yourTxtEmail = modalWriteUs.querySelector(".txt-email");
 var form = modalWriteUs.querySelector(".write-us-form");
-// var storage = localStorage.getItem("yourName");
-// var storage = localStorage.getItem("yourEmail");
 var mapLink = document.querySelector(".map__link");
 var modalMap = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".js-close");
@@ -80,7 +78,7 @@ if(basketClose!=null)
 buyModal[i].addEventListener("click", function (evt) {
   evt.preventDefault();
    modalBasket.classList.add("modal-show");
-console.log('работает');
+console.log("работает");
 });
 }
 basketClose.addEventListener("click", function (evt) {
